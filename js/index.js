@@ -1,7 +1,9 @@
-
+const btn = document.querySelector('button');
 const formulario = document.querySelector('form');
 const prod = document.querySelector('.produtos');
 const produtosCriados = [];
+
+
 
 formulario.addEventListener('submit', function(event) {
     
