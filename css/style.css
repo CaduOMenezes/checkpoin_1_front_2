@@ -1,0 +1,119 @@
+body{
+    background-color: #020a42;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 2px solid rgb(2, 125, 2);
+    border-radius: 15px;
+    padding: 20px;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 15px;
+}
+form h1{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #909090;
+}
+form input{
+    padding: 15px;
+    font-size: 25px;
+    border: 2px solid rgb(2, 125, 2);
+    border-radius: 15px;
+    color: #909090;
+    background-color: #020a42;
+}
+
+form button{
+    padding: 10px;
+    font-size: 25px;
+    border: 2px solid rgb(2, 125, 2);
+    border-radius: 15px;
+    color: #d6d6d6;
+    background-color: rgb(2, 125, 2);
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px #A0A0A0;
+}
+
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 90%;
+    padding: 20px;
+    
+}
+.card{
+    width: 200px;
+    color: #d6d6d6;
+    border: 1.5px solid rgb(2, 125, 2);
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card img{
+    width: 80%;
+}
+
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    color: #d6d6d6;
+}
+
+.devs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+}
+.dev{
+    width: 150px;
+    height: 100px;
+    color: #d6d6d6;
+    font-size: 18px;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.links a img{
+    height: 50px;
+    width: 50px;
+}
