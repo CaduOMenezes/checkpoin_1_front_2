@@ -178,6 +178,9 @@ footer{
     height: 100px;
     color: #d6d6d6;
     font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .links{
     display: flex;
