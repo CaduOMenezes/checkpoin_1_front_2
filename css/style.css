@@ -177,15 +177,15 @@ footer{
     width: 150px;
     height: 100px;
     color: #d6d6d6;
-    font-size: 18px;
+    font-size: 15px;
 }
 .links{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 125px;
+    width: 120px;
     flex-direction: row;
-    gap: 10px;
+    gap: 8px;
 }
 
 .links a img{
