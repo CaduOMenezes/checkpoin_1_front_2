@@ -10,19 +10,43 @@
 </head>
 <body>
     
-    <header></header>
+    <header>
+        <section class="ball"></section>
+        <section class="ball"></section>
+        <section class="ball"></section>
+        <section class="ball"></section>
+        <section class="ball"></section>
+        <section class="ball"></section>
+        <section class="ball"></section>
+    </header>
     
     <main>
         <form action="">
             <h1>Insira seu produto</h1>
-            <input type="text" name="titulo" id="titulo" placeholder="Nome do Produto" required>
-            <input type="number" min="0" max="10000" name="price" id="price" placeholder="R$ 0,00" required>
-            <input type="text" name="imagem" id="imagem" placeholder="URL da Imagem" required>
-            <input type="textarea" name="descricao" id="descricao" placeholder="Descrição do Produto" required>
+            <div class="input text">
+                <img src="./images/text.png" alt="">
+                <input type="text" name="titulo" id="titulo" placeholder="Nome do Produto" required>
+            </div>
+            <div class="input text">
+                <img src="./images/image.png" alt="">
+                <input type="text" name="imagem" id="imagem" placeholder="URL da Imagem" required>
+            </div>
+            <div class="input text">
+                <img src="./images/info.jpg" alt="">
+                <textarea name="descricao" id="descricao" ></textarea>
+            </div>
+            <div class="input number">
+                <input type="date" name="data" id="date" placeholder="Data de Lançamento" required>
+                <div class="preco">
+                    <img src="./images/cash.png" alt="">
+                    <input type="number" min="0" max="10000" name="price" id="price" placeholder="Preço" required>
+                </div>
+            </div>
             <button type="submit">Enviar</button>
         </form>
         
         <section class="produtos">
+            <h2>Produtos</h2>
             
         </section>
     </main>

@@ -12,6 +12,8 @@ formulario.addEventListener('submit', function(event) {
         preco: document.querySelector('#price').value,
         imagem: document.querySelector('#imagem').value,
         descricao: document.querySelector('#descricao').value,
+        lancamento: document.querySelector('#date').value
+
     }
     adicionarProduto(produto);
     event.preventDefault();
@@ -26,9 +28,11 @@ function adicionarProduto(produto) {
         const div = document.createElement('div');
         div.innerHTML = `
             <h3>${card.nome}</h3>
-            <p>R$${card.preco}</p>
+            <p>Preço: R$${card.preco}</p>
             <img src="${card.imagem}" alt="">
+            <p>Sobre o produto:</p>
             <p>${card.descricao}</p>
+            <p>Lançamento: ${card.lancamento}</p>
         `;
         div.setAttribute('class', 'card');
         prod.appendChild(div);
