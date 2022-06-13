@@ -1,5 +1,6 @@
 body{
-    background: linear-gradient(to right, #43c6ac, #191654);
+    /*background: linear-gradient(to right, #43c6ac, #191654);*/
+    background: linear-gradient(to right, #780206, #061161);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -20,10 +21,11 @@ form{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    border: 2px solid rgb(2, 125, 2);
+    border: 2px solid #BABACA;
     border-radius: 15px;
     padding: 20px;
-    width: 400px;
+    width: 70%;
+    max-width: 400px;
     align-items: center;
     margin: 40px 15px;
     color: #ffffff;
@@ -51,6 +53,10 @@ form textarea{
     background-color: transparent;
     height: 75px;
     width: 80%;
+    resize: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .input img{
     width: 25px;
@@ -65,6 +71,7 @@ form textarea{
     gap: 5px;
     width: 100%;
     color: #ffffff;
+    padding: 5px 10px;
 }
 
 .number{
@@ -76,7 +83,7 @@ form textarea{
     gap: 10px;
 }
 
-.text , .preco{
+ .preco{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -87,7 +94,7 @@ form textarea{
     
 }
 .preco , #date , .text{
-    border: 2px solid rgb(2, 125, 2);
+    border: 2px solid #BABACA;
     border-radius: 15px;
     font-size: 18px;
 }
@@ -96,28 +103,29 @@ form textarea{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    width: 40%;
     gap: 5px;
     padding: 2px;
 }
 
 .preco input{
-    width: 60%;
+    width: 50%;
     font-size: 18px;
     color: #ffffff;
 }
 form button{
     padding: 10px;
     font-size: 25px;
-    border: 2px solid rgb(2, 125, 2);
+    border: 2px solid #1b1b1b;
     border-radius: 15px;
-    color: #d6d6d6;
-    background-color: rgb(2, 125, 2);
+    color: #1a1a1a;
+    background-color: #BABACA;
     width: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 2px #A0A0A0;
+    box-shadow: 3px 3px #1b1b1b;
+    
 }
 
 .produtos{
@@ -136,7 +144,7 @@ form button{
 .card{
     width: 200px;
     color: #d6d6d6;
-    border: 1.5px solid rgb(2, 125, 2);
+    border: 1.5px solid #BABACA;
     border-radius: 15px;
     padding: 10px;
     display: flex;
@@ -206,7 +214,24 @@ form input:focus , textarea:focus{
 
 }
 
+button:hover{
+    background-color: #1a1a1a;
+    border: 2px solid #BABACA;
+    color: #BABACA;
+    box-shadow: 3px 3px #BABACA;
+    transition: 1s;
+}
+
+.links a:hover{
+    transform: scale(1.5);
+    transition: 1.5s;
+}
+
 ::placeholder{
     color: #ffffff;
+}
+
+::-webkit-calendar-picker-indicator{
+    filter: invert(1);
 }
 /*Animações: */
