@@ -22,24 +22,29 @@
     
     <main>
         <form action="">
-            <h1>Adicionar produto</h1>
+            <h2>Adicionar produto</h2>
             <div class="input text">
                 <img src="./images/product.png" alt="">
                 <input type="text" name="titulo" id="titulo" placeholder="Nome do Produto" required>
+                <div class="underline"></div>
             </div>
             <div class="input text">
                 <img src="./images/image-gallery.png" alt="">
                 <input type="text" name="imagem" id="imagem" placeholder="URL da Imagem" required>
+                <div class="underline"></div>
             </div>
             <div class="input text">
                 <img src="./images/info.png" alt="">
                 <textarea name="descricao" id="descricao" placeholder="Descrição do produto"></textarea>
+                <div class="underline"></div>
             </div>
             <div class="input number">
                 <input type="date" name="data" id="date" placeholder="Data de Lançamento" required>
+                <div class="underline"></div>
                 <div class="preco">
                     <img src="./images/price-tag.png" alt="">
                     <input type="number" min="0" max="10000" name="price" id="price" placeholder="Preço" required>
+                    <div class="underline"></div>
                 </div>
             </div>
             <button type="submit">Enviar</button>
