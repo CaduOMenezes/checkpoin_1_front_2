@@ -11,6 +11,25 @@ main{
     width: 100%;
     
 }
+
+h1{
+    color: white;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    position: relative;
+}
+h1::before{
+
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    border-radius: 8px;
+    background-color:rgb(2, 125, 2) ;
+
+}
 form{
     display: flex;
     flex-direction: column;
@@ -22,21 +41,60 @@ form{
     justify-content: space-between;
     align-items: center;
     margin: 40px 15px;
+    background-color: white;
 }
-form h1{
+form h2{
     font-size: 25px;
     font-weight: bold;
     text-align: center;
-    color: #909090;
+    color: #323232;
 }
-form input{
+.field{
+display: flex;
+flex-direction: column;
+position: relative;
+justify-content: center;
+
+
+}
+
+.underline::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background:#909090;
+}
+.underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background:rgb(2, 125, 2);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.field input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
+.field input{
+    width: 250px;
+    outline: none;
     padding: 15px;
     font-size: 25px;
-    border: 2px solid rgb(2, 125, 2);
+    border: none;
     border-radius: 15px;
-    color: #909090;
-    background-color: #020a42;
+    color: rgb(19, 19, 20);
+    background-color: white;
 }
+
 
 form button{
     padding: 10px;
@@ -64,7 +122,7 @@ form button{
 }
 .card{
     width: 200px;
-    color: #d6d6d6;
+    color: #4a4a4a;
     border: 1.5px solid rgb(2, 125, 2);
     border-radius: 15px;
     padding: 10px;
@@ -73,6 +131,8 @@ form button{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    word-break: break-all;
+    background-color: white;
 }
 
 .card img{

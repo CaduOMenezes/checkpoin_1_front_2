@@ -1,59 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkpoint I - Front II</title>
-    <link rel="stylesheet" href="./reset/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./reset/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header></header>
-    
+
     <main>
-        <form action="">
-            <h1>Insira seu produto</h1>
-            <input type="text" name="titulo" id="titulo" placeholder="Nome do Produto" required>
-            <input type="number" min="0" max="10000" name="price" id="price" placeholder="R$ 0,00" required>
-            <input type="text" name="imagem" id="imagem" placeholder="URL da Imagem" required>
-            <input type="textarea" name="descricao" id="descricao" placeholder="Descrição do Produto" required>
-            <button type="submit">Enviar</button>
-        </form>
-        
-        <section class="produtos">
-            
-        </section>
+      <h1>RDC</h1>
+
+      <form action="">
+        <h2>Insira seu produto</h2>
+        <div class="field">
+          <input
+            type="text"
+            name="titulo"
+            id="titulo"
+            placeholder="Nome do Produto"
+            required
+          />
+          <div class="underline"></div>
+        </div>
+        <div class="field">
+          <input
+            type="number"
+            min="0"
+            max="10000"
+            name="price"
+            id="price"
+            placeholder="R$ 0,00"
+            required
+          />
+          <div class="underline"></div>
+    </div>
+    <div class="field">
+          <input
+            type="text"
+            name="imagem"
+            id="imagem"
+            placeholder="URL da Imagem"
+            required
+          />
+          <div class="underline"></div>
+    </div>
+    <div class="field">
+          <input
+            type="textarea"
+            name="descricao"
+            id="descricao"
+            placeholder="Descrição do Produto"
+            required
+          />
+          <div class="underline"></div>
+        </div>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <section class="produtos"></section>
     </main>
-    
+
     <footer>
-        <section class="devs">
-            <div class="dev">
-                <section class="links">
-                    <a href="https://www.linkedin.com/in/cadu-menezes/" target="blank"><img src="./images/linkedinvector_branco.png" alt="Linkedin"></a>
-                    <a href="https://github.com/CaduOMenezes/" target="blank"><img src="./images/githubvector_branco.png" alt="GitHub"></a>
-                </section>
-                <h3>Cadu Menezes</h3>
-            </div>
-            <div class="dev">
-                <section class="links">
-                    <a href="https://www.linkedin.com/in/diogo-de-moraes-612a81102/" target="blank"><img src="./images/linkedinvector_branco.png" alt="Linkedin"></a>
-                    <a href="https://github.com/DiogomCunha" target="blank"><img src="./images/githubvector_branco.png" alt="GitHub"></a>
-                </section>
-                <h3>Diogo de Moraes</h3>
-            </div>
-            <div class="dev">
-                <section class="links">
-                    <a href="https://www.linkedin.com/in/rafael-alves-1709a6173/" target="blank"><img src="./images/linkedinvector_branco.png" alt="Linkedin"></a>
-                    <a href="https://github.com/AlvesRafaelVi" target="blank"><img src="./images/githubvector_branco.png" alt="GitHub"></a>
-                </section>
-                <h3>Rafael Alves</h3>
-            </div>
-        </section>
-        <p>&copy; Checkpoint I - Front II</p>
+      <section class="devs">
+        <div class="dev">
+          <section class="links">
+            <a href="https://www.linkedin.com/in/cadu-menezes/" target="blank"
+              ><img src="./images/linkedinvector_branco.png" alt="Linkedin"
+            /></a>
+            <a href="https://github.com/CaduOMenezes/" target="blank"
+              ><img src="./images/githubvector_branco.png" alt="GitHub"
+            /></a>
+          </section>
+          <h3>Cadu Menezes</h3>
+        </div>
+        <div class="dev">
+          <section class="links">
+            <a
+              href="https://www.linkedin.com/in/diogo-de-moraes-612a81102/"
+              target="blank"
+              ><img src="./images/linkedinvector_branco.png" alt="Linkedin"
+            /></a>
+            <a href="https://github.com/DiogomCunha" target="blank"
+              ><img src="./images/githubvector_branco.png" alt="GitHub"
+            /></a>
+          </section>
+          <h3>Diogo de Moraes</h3>
+        </div>
+        <div class="dev">
+          <section class="links">
+            <a
+              href="https://www.linkedin.com/in/rafael-alves-1709a6173/"
+              target="blank"
+              ><img src="./images/linkedinvector_branco.png" alt="Linkedin"
+            /></a>
+            <a href="https://github.com/AlvesRafaelVi" target="blank"
+              ><img src="./images/githubvector_branco.png" alt="GitHub"
+            /></a>
+          </section>
+          <h3>Rafael Alves</h3>
+        </div>
+      </section>
+      <p>&copy; Checkpoint I - Front II</p>
     </footer>
-    
+
     <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>
