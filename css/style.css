@@ -41,7 +41,6 @@ form input{
     border:none;
     background-color: transparent;
     color:#ffffff;
-    
 }
 form textarea{
     padding: 5px;
@@ -226,6 +225,8 @@ button:hover{
     transform: scale(1.5);
     transition: 1.5s;
 }
+
+
 
 ::placeholder{
     color: #ffffff;
